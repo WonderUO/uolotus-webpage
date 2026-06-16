@@ -1,0 +1,105 @@
+html {
+		background: #000000 
+}
+p{
+  font-family: "Latin Modern Roman 10	";
+  font-style: oblique;
+	color : yellow ;
+font-size: 110%;
+}
+p1{
+  font-family: "Latin Modern Roman 10	";
+  font-style: oblique;
+font-size: 110%;
+	color : white ;
+}
+a { 
+  font-family: "Latin Modern Roman 10";
+}
+
+a2 { 
+float: left;
+text-align: left;
+color: white;
+font-size: 100%;
+  font-family: "Latin Modern Roman 10";
+}
+li {
+color: white
+
+}
+h1 {
+  font-family: "Latin Modern Roman 10";
+  font-style: oblique;
+	color : #ffffff ;
+
+}
+h2 {
+  margin-top : -3%;
+  text-align: center;
+  font-family: "Latin Modern Roman 10";
+  font-size: 300%;
+  font-style: oblique;
+	color : #ffffff ;
+}
+.mitabla {
+    border-collapse: collapse;
+}
+
+.mitabla th, .mitabla td {
+    border: 1px solid #000000;
+    padding: 1px;
+    font-family: "Latin Modern Roman 10";
+    font-style: oblique;
+    color: #ffffff;
+    background: #3e2525;
+}
+
+.caracteristicas {
+  margin-top : 2.5%;
+float: left;
+text-align: left; 
+font-size : 110%;
+}
+.links {
+  margin-top : -2.9%;
+ position: relative;left: 4%;
+
+}
+.slider {
+  margin-top: 100px; 
+ position: relative;right: 10%;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: cambio 20s infinite;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
