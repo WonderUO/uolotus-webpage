@@ -10,38 +10,64 @@ body {
     font-family: "Latin Modern Roman 10", serif;
 }
 
+/* Navegacion superior, arriba a la izquierda */
+.topnav {
+    text-align: left;
+    padding: 14px 0 0 18px;
+}
+
+.topnav a {
+    color: #db2929;
+    text-decoration: none;
+    font-size: 100%;
+    margin: 0 16px 0 0;
+    display: inline-block;
+}
+
+.topnav a:hover {
+    color: #ffffff;
+}
+
 .hero {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 0px;
 }
 
 .hero h1 {
-    font-size: 300%;
+    font-size: 230%;
     font-style: oblique;
     color: #ffffff;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     font-weight: normal;
 }
 
 .hero-links {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .hero-links a {
     text-decoration: none;
-    font-size: 20px;
-    margin: 0 20px;
+    font-size: 17px;
+    margin: 0 14px;
     display: inline-block;
 }
 
 .hero-links a:nth-child(1),
-.hero-links a:nth-child(3) {
+.hero-links a:nth-child(3),
+.hero-links a:nth-child(4) {
     color: #db2929;
 }
 
 .hero-links a:nth-child(2) {
     color: #c8c332;
+}
+
+.hero-sub {
+    font-style: oblique;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .columns {
@@ -80,10 +106,10 @@ body {
 }
 
 .caracteristicas h2 {
-    font-size: 150%;
+    font-size: 140%;
     font-style: oblique;
     color: #ffffff;
-    margin: 0 0 10px 0;
+    margin: 0 0 6px 0;
     text-align: left;
     font-weight: normal;
 }
@@ -91,8 +117,8 @@ body {
 .caracteristicas p {
     font-style: oblique;
     color: yellow;
-    font-size: 110%;
-    margin: 0 0 10px 0;
+    font-size: 100%;
+    margin: 0 0 8px 0;
 }
 
 .caracteristicas ul {
@@ -103,12 +129,13 @@ body {
 .caracteristicas li {
     color: white;
     font-size: 100%;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .slider {
     width: 100%;
     max-width: 700px;
+    max-height: 330px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -130,6 +157,8 @@ body {
 
 .slider img {
     width: 100%;
+    height: 330px;
+    object-fit: contain;
     display: block;
 }
 
@@ -153,4 +182,323 @@ body {
     70%  { margin-left: -200%; }
     75%  { margin-left: -300%; }
     100% { margin-left: -300%; }
+}
+
+/* ============================================================
+   PAGINAS INTERNAS — estilo minimalista retro 98
+   Lienzo negro, serif romana, links directos.
+   ============================================================ */
+
+.page-section {
+    margin-top: 18px;
+    clear: both;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 40px 50px 40px;
+    box-sizing: border-box;
+}
+
+.page h1 {
+    font-size: 200%;
+    font-style: oblique;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 0 0 6px 0;
+}
+
+.page .subtitle {
+    font-style: oblique;
+    color: #c8c332;
+    font-size: 100%;
+    margin: 0 0 18px 0;
+}
+
+.page h2 {
+    font-size: 150%;
+    font-style: oblique;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 22px 0 8px 0;
+}
+
+.page h3 {
+    font-size: 120%;
+    font-style: oblique;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 16px 0 6px 0;
+}
+
+.page p {
+    color: white;
+    font-size: 100%;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+/* Listas de links directos (skills, categorias, hubs) */
+.linklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.linklist li {
+    margin: 0 0 4px 0;
+}
+
+.linklist li a {
+    color: #c8c332;
+    text-decoration: none;
+    font-size: 110%;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.linklist li a:hover {
+    color: #ffffff;
+}
+
+.linklist li a .desc {
+    color: #8a8a8a;
+    font-size: 90%;
+}
+
+/* Listas de enlaces por categorias (tabs fila) */
+.tabs {
+    margin: 0 0 16px 0;
+}
+
+.tabs a {
+    color: #db2929;
+    text-decoration: none;
+    font-size: 100%;
+    margin: 0 12px 0 0;
+    display: inline-block;
+}
+
+.tabs a:hover {
+    color: #ffffff;
+}
+
+.tabs a.active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Fila de categorias (sistemas.html, faq.html) */
+.catlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catlist li {
+    margin: 0 0 4px 0;
+}
+
+.catlist li a {
+    color: #c8c332;
+    text-decoration: none;
+    font-size: 130%;
+    line-height: 1.6;
+}
+
+.catlist li a:hover {
+    color: #ffffff;
+}
+
+.catlist li a .count {
+    color: #8a8a8a;
+    font-size: 80%;
+}
+
+/* Lista simple en 3 columnas (skills.html) */
+.cwrap {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -ms-column-count: 3;
+    column-count: 3;
+    -ms-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.cwrap li {
+    -ms-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.cwrap li a {
+    color: #c8c332;
+    text-decoration: none;
+    font-size: 110%;
+    line-height: 1.7;
+}
+
+.cwrap li a:hover {
+    color: #ffffff;
+}
+
+/* Grid estilo "Iconos pequeños" del explorador (skills) */
+.icogrid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+}
+
+.icogrid li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex: 0 0 250px;
+    flex: 0 0 250px;
+}
+
+.icogrid li a {
+    text-decoration: none;
+    display: block;
+}
+
+.icogrid .ico {
+    width: 26px;
+    height: 26px;
+    -ms-flex: 0 0 26px;
+    flex: 0 0 26px;
+    margin-right: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.icogrid .ico::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #c8c332;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.icogrid .name {
+    display: block;
+    color: #c8c332;
+    font-size: 110%;
+    line-height: 1.25;
+}
+
+.icogrid .name:hover {
+    color: #ffffff;
+}
+
+.icogrid .sub {
+    display: block;
+    color: #8a8a8a;
+    font-size: 85%;
+    line-height: 1.25;
+}
+
+/* Panel de sistema (sistemas.html) y FAQ */
+.panel {
+    display: none;
+}
+
+.panel:target {
+    display: block;
+}
+
+.panel:target ~ .catlist {
+    display: none;
+}
+
+.panelbox {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+.panelbox:target {
+    display: block;
+}
+
+.welcome {
+    display: block;
+}
+
+.welcome h1 {
+    font-size: 200%;
+    font-style: oblique;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 0 0 6px 0;
+}
+
+/* Nota del servidor (detalle de skill) */
+.note {
+    margin-top: 16px;
+    padding: 8px 12px;
+    border: 1px solid #3a3620;
+    color: #e8c96a;
+    font-size: 95%;
+    font-style: oblique;
+    line-height: 1.5;
+}
+
+/* Navegacion de vuelta (detalle de skill) */
+.backlink {
+    margin-top: 26px;
+    border-top: 1px solid #222222;
+    padding-top: 14px;
+    font-size: 100%;
+}
+
+.backlink a {
+    color: #db2929;
+    text-decoration: none;
+    margin: 0 18px 0 0;
+    display: inline-block;
+}
+
+.backlink a:hover {
+    color: #ffffff;
+}
+
+/* Tablas (cuentas) */
+table {
+    border-collapse: collapse;
+    margin: 6px 0 14px 0;
+}
+
+table th {
+    color: #c8c332;
+    text-align: left;
+    font-style: oblique;
+    font-weight: normal;
+    padding: 4px 12px;
+    border-bottom: 1px solid #333333;
+}
+
+table td {
+    color: white;
+    padding: 4px 12px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+code {
+    color: #ffd479;
+    font-family: Consolas, monospace;
+    font-size: 95%;
 }
