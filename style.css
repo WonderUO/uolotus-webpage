@@ -97,7 +97,7 @@ body {
 .col-right {
     -ms-flex: 0 0 280px;
     flex: 0 0 280px;
-    padding-left: 0px;
+    padding-left: 30px;
     box-sizing: border-box;
 }
 
